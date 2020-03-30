@@ -1,0 +1,14 @@
+Linux
+If Chromium has been installed from the snap store (the default in the Ubuntu Software Store) it will not be able to access WebUSB devices.
+
+On some Linux distributions eg. Ubuntu,  you may need to declare a udev rule. To do this:
+Close Chrome
+Create a file at
+/etc/udev/rules.d/50-microbit.rules
+ with the following content:
+
+Add your user to the plugdev group (replace with your username): 
+sudo adduser your_username plugdev 
+Restart the udev rules 
+sudo udevadm control --reload-rules 
+Open Chrome and try to pair again 
