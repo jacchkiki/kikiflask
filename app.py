@@ -46,3 +46,4 @@ def picture():
 @app.route('/product')
 def product():
     return  render_template ("product.html")
+

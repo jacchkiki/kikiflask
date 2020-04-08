@@ -25,10 +25,24 @@
        });
        
       });
+
     </script>
-  
+    <script>
+        //讀取文件
+        $( document ).ready(function() { 
+            //如果文件點選項目時
+            console.log( "ready!" );
+            $(".card-link").on("click",function(){
+                //把欄位內容放到結果欄
+                $(".result").html($(this).html());
+
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>kiki's website</title>
+
 </head>
 <body>
     <header>
@@ -82,39 +96,51 @@
           This is some text within a card body.123
           <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
+              <h5 class="card-title">剪刀</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Scissors</h6>
+              <p class="card-text">Scissors</p>
+              <a href="#" class="card-link">Scissors</a>
+              
+            </div> 
+          </div>
+          
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <h5 class="card-title">石頭</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Rock</h6>
+                <p class="card-text">Rock</p>
+                <a href="#" class="card-link">Rock</a>
+                
               </div>
             </div>
 
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <h5 class="card-title">布</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Paper</h6>
+                <p class="card-text">Paper</p>
+                <a href="#" class="card-link">Paper</a>
+              
               </div>
             </div>
   
-          </div>
 
 
 
         </div>
       </div>
       
+        <!-- container 容器： 裝東西的空間-->
+        <div class="container1"> 
+            
+          <!-- result 結果： 把結果放進這裡-->
+          <div class="result">結果 <br>
+            找到 .result |  $(".result")  | class="result" <br>
+            $(".result").html("<u>內容</u>") | 內容放到裡面      <br> 
+
+          </div>
+
+      </div>
        
 
     </main>
