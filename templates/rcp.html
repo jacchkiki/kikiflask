@@ -92,20 +92,59 @@
     </header>
 
     <main>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="{{url_for('static',filename='twice/twice1.png')}}" class="d-block w-100" alt="...">
+      <div class="card">
+        <div class="card-body">
+          
+          This is some text within a card body.123
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">剪刀</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Scissors</h6>
+              <p class="card-text">Scissors</p>
+              <a href="#" class="card-link">Scissors</a>
+              
+            </div> 
           </div>
-          <div class="carousel-item">
-            <img src="{{url_for('static',filename='twice/twice2.png')}}" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{{url_for('static',filename='twice/twice3.jpg')}}" class="d-block w-100" alt="...">
-            
-          </div>
+          
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">石頭</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Rock</h6>
+                <p class="card-text">Rock</p>
+                <a href="#" class="card-link">Rock</a>
+                
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">布</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Paper</h6>
+                <p class="card-text">Paper</p>
+                <a href="#" class="card-link">Paper</a>
+              
+              </div>
+            </div>
+  
+
+
+
         </div>
       </div>
+      
+        <!-- container 容器： 裝東西的空間-->
+        <div class="container1"> 
+            
+          <!-- result 結果： 把結果放進這裡-->
+          <div class="result">結果 <br>
+            找到 .result |  $(".result")  | class="result" <br>
+            $(".result").html("<u>內容</u>") | 內容放到裡面      <br> 
+
+          </div>
+
+      </div>
+       
+
     </main>
 
     <footer>

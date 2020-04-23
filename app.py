@@ -46,4 +46,16 @@ def picture():
 @app.route('/product')
 def product():
     return  render_template ("product.html")
+#行事曆
+@app.route('/Calendar')
+def Calendar():
+    return  render_template ("Calendar.html")
+    #猜拳
+@app.route('/rcp')
+def rcp():
+    return  render_template ("rcp.html")
 
+
+@app.route('/*')
+def imdex1():
+    return  render_template ("index1.html")
