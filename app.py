@@ -59,3 +59,7 @@ def rcp():
 @app.route('/*')
 def imdex1():
     return  render_template ("index1.html")
+
+@app.route('/2')
+def 鬼滅豬認():
+    return  render_template ("鬼滅豬認.html")
