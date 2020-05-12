@@ -63,3 +63,7 @@ def imdex1():
 @app.route('/2')
 def 鬼滅豬認():
     return  render_template ("鬼滅豬認.html")
+
+@app.route('/3')
+def 猴跳牆():
+    return  render_template ("猴跳牆.html")
