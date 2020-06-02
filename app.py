@@ -1,4 +1,5 @@
 from flask import Flask, escape, request,render_template
+from jacchlibs.readxls import readxls
 
 #start app
 app = Flask(__name__)
@@ -67,3 +68,20 @@ def 鬼滅豬認():
 @app.route('/3')
 def 猴跳牆():
     return  render_template ("猴跳牆.html")
+@app.route('/candy')
+def candy():
+    return  render_template ("candy/index.html")
+
+
+@app.route('/cookie')
+def cookie():
+    return  render_template ("cookie/index1.html")
+@app.route('/master')
+def master():
+    xls=readxls("db.xlsx")
+    sheet=xls.read("bekachu")  
+    print (sheet["A1"].value)
+    print (sheet["A2"].value)
+    print (sheet["B1"].value)
+    print (sheet["B2"].value)
+    return  render_template ("master/index1.html",master=sheet)
