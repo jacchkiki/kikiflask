@@ -78,10 +78,11 @@ def cookie():
     return  render_template ("cookie/index1.html")
 @app.route('/master')
 def master():
+    a = request.args.get("name", 0)
     xls=readxls("db.xlsx")
-    sheet=xls.read("bekachu")  
+    sheet=xls.read(a)  
     print (sheet["A1"].value)
     print (sheet["A2"].value)
     print (sheet["B1"].value)
     print (sheet["B2"].value)
-    return  render_template ("master/index1.html",master=sheet)
+    return  render_template ("master/index1.html",a=a,master=sheet)

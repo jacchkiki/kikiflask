@@ -10,5 +10,8 @@ class readxls:
     def read(self,sheet):
         self.ws = self.wb[sheet]
         return self.ws
-
+    
+    #讀取工作表
+    def sheetnames(self):
+        return self.wb.sheetnames
 
