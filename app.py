@@ -80,9 +80,7 @@ def cookie():
 def master():
     a = request.args.get("name", 0)
     xls=readxls("db.xlsx")
-    sheet=xls.read(a)  
-    print (sheet["A1"].value)
-    print (sheet["A2"].value)
-    print (sheet["B1"].value)
-    print (sheet["B2"].value)
+    sheet=xls.read(a)
+    b=xls.sheetnames() 
+    
     return  render_template ("master/index1.html",a=a,master=sheet)
