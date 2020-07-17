@@ -51,6 +51,7 @@
     </header>
 
     <main>
+    <div class="container marketing">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -64,7 +65,35 @@
             
           </div>
         </div>
+
       </div>
+    </div>
+
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <p>  <img src="{{url_for('static',filename='twice/twice1.jpg')}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="..."></p>
+        
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <p>  <img src="{{url_for('static',filename='twice/2.jpg')}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="..."></p>
+        
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <p>  <img src="{{url_for('static',filename='twice/3.jpg')}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="..."></p>
+
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
     </main>
 
     <footer>
