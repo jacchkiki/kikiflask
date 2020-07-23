@@ -26,8 +26,6 @@
        
     });
 
-    </script>
-    <script>
         
         //讀取文件
         $( document ).ready(function() { 
@@ -46,21 +44,20 @@
       p {color:darkslategrey;}
       .score {font-size: large;}
       .b {font-size: small;}
+      section {height: 80vh;}
     </style>
-  
+
 
     <title>kiki's website</title>
 
 </head>
 <body> 
-  <p class="score">.1.2.3.4.5</p>
-  <p class="b">.6.7.8.9.10</p>
     <header>
-      {% include 'include.html' %}
-
+    {% include 'include.html' %} 
     </header>
 
     <main>
+      <section>
     <div class="container marketing">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -77,10 +74,10 @@
         </div>
 
       </div>
-    </div>
-
+    </div> 
         <!-- Wrap the rest of the page in another container to center all the content. -->
-
+      </section>
+      <section>
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
@@ -100,9 +97,17 @@
 
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+    </div><!-- /.row -->  
+    </section>
+    <section>
+        
 
-
+    <div class="container marketing">
+     
+      <p class="score">.1.2.3.4.5</p>
+      <p class="b">.6.7.8.9.10</p>
+    </div> 
+    </section>
     <!-- START THE FEATURETTES -->
     </main>
 
